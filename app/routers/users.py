@@ -155,7 +155,7 @@ async def get_user(user_id: str, current_user: dict = Depends(get_current_user))
 
 
 @router.get("/", response_model=List[UserRead], status_code=200)
-async def get_all_users(current_user: dict = Depends(get_current_user)):
+async def get_all_users():
     """
     Retrieve a list of all users.
     """
