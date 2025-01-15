@@ -15,7 +15,6 @@ A FastAPI-based personal finance backend with integrated language model capabili
 - [Usage Example](#usage-example)
 - [Troubleshooting](#troubleshooting)
 - [Additional Notes](#additional-notes)
-- [Contact](#contact)
 
 ## Features
 
