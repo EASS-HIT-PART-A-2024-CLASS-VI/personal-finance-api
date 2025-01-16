@@ -7,7 +7,9 @@ from app.database import records_collection
 from fastapi import APIRouter, Depends, HTTPException
 from app.schemas import QuestionRequest
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 # Initialize the Hugging Face InferenceClient
 client = InferenceClient(api_key=os.getenv(

@@ -27,6 +27,7 @@ async def async_client():
     async with AsyncClient(base_url="http://testserver", transport=transport) as client:
         yield client
 
+
 @pytest.fixture(autouse=True)
 def ignore_warnings():
     warnings.filterwarnings("ignore")

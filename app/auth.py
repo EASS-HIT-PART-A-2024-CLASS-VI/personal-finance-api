@@ -2,7 +2,6 @@
 
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
-from typing import Optional
 from app.utils import decode_access_token
 from app.database import users_collection
 from bson import ObjectId

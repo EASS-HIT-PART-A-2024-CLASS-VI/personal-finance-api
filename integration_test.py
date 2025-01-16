@@ -1,8 +1,7 @@
 # integration_test.py
 
 import pytest
-from datetime import timedelta, datetime, timezone
-import jwt
+from datetime import timedelta
 import time
 
 # Utility function to generate unique emails
@@ -267,4 +266,3 @@ async def test_non_existent_resource_operations(async_client):
     # Attempt to delete a non-existent record
     response = await async_client.delete("/records/507f1f77bcf86cd799439099", headers=headers)
     assert response.status_code == 500, response.text
-

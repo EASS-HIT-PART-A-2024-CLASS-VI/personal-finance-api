@@ -10,6 +10,10 @@ from app.utils import hash_password, verify_password, create_token, decode_acces
 from app.serializers import serialize_user
 from app.auth import get_current_user
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 30))
 REFRESH_TOKEN_EXPIRE_MINUTES = int(

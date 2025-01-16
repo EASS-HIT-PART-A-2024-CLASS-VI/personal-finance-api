@@ -3,6 +3,9 @@
 from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo.server_api import ServerApi
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def get_database():
